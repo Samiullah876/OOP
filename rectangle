@@ -1,0 +1,24 @@
+public class rectangle {
+public int length;
+    public int width;
+    public rectangle(){
+        length=5;
+        width=2;
+    }
+    public rectangle(int l,int w){
+        length=l;
+        width=w;
+    }
+    public int area(){
+        return(length*width);
+    }
+}
+
+class runner {
+    public static void main(String[] args) {
+        rectangle r = new rectangle();
+        System.out.println(r.area());
+        rectangle r1 = new rectangle(10, 20);
+        System.out.println(r1.area());
+    }
+}
